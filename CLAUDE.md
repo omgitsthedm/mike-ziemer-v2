@@ -5,7 +5,7 @@
 ## Commands  (REQUIRED)
 - Dev/preview: `npx serve .` (or `netlify dev`) — static site, no build
 - Build: none (`publish = "."`)
-- Deploy: **MANUAL** — `netlify deploy --prod --dir=.` (**git push does NOT deploy**; git origin is divergent/stale). Deploy = production → needs `APPROVE LIVE CHANGE`.
+- Deploy: **MANUAL** — `netlify deploy --prod --dir=.` (**git push does NOT deploy**; git origin is divergent/stale). Deploy = production → needs clear, scoped confirmation from David.
 - Lint/format: n/a (static)
 - ⚠️ Git is NOT live. The contact/lead form is a real submission path — no test leads against production.
 

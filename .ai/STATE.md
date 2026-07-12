@@ -26,7 +26,7 @@
 - Verify deploy metadata read-only with:
   `netlify api listSiteDeploys --data '{"site_id":"<id>","per_page":5}'`
   (`commit_ref: null` = manual deploy; a non-null commit_ref = a historical git-triggered deploy.)
-- **Never `git push` expecting it to update the live site.** Promotion to live is a manual `netlify deploy --prod` and is gated by `APPROVE LIVE CHANGE`.
+- **Never `git push` expecting it to update the live site.** Promotion to live is a manual `netlify deploy --prod` and is gated by clear, scoped confirmation from David.
 
 ## Current Live Truth
 
@@ -55,7 +55,7 @@
 
 - `.env` / secrets / API keys.
 - The forced-404 redirects in `netlify.toml` (keeps internal docs private).
-- Any Netlify deploy or live mutation without `APPROVE LIVE CHANGE`.
+- Any Netlify deploy or live mutation without clear, scoped confirmation from David.
 - The superseded repos / sibling Netlify projects listed above.
 
 ## Proposed Changes / Inbox
@@ -73,7 +73,7 @@
 
 ## Next Agent Directive
 
-Read `.ai/RULES.md` + `.ai/STATE.md` + `CLAUDE.md` first. **Git is NOT live** — live is a manual Netlify deploy and the git origin is divergent/stale. Any deploy or live mutation is gated by `APPROVE LIVE CHANGE`. Don't read `.env`/secrets. Don't touch the superseded repos / sibling Netlify projects. Keep the forced-404 redirects.
+Read `.ai/RULES.md` + `.ai/STATE.md` + `CLAUDE.md` first. **Git is NOT live** — live is a manual Netlify deploy and the git origin is divergent/stale. Any deploy or live mutation is gated by clear, scoped confirmation from David. Don't read `.env`/secrets. Don't touch the superseded repos / sibling Netlify projects. Keep the forced-404 redirects.
 
 ## Emergency / Bypass Notes
 

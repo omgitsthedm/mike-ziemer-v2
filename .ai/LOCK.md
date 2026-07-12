@@ -13,7 +13,7 @@ Files:
 - .ai/LOCK.md
 Started:
 Expected Closeout:
-Recovery Note: Live client site (static, branch `master`). **Git is NOT live** — live is a MANUAL Netlify deploy; git origin is divergent/stale. Treat deploys + real contact/lead submissions as production actions (gated by `APPROVE LIVE CHANGE`). `.ai/`/`*.md` are kept private via forced-404 redirects in `netlify.toml`.
+Recovery Note: Live client site (static, branch `master`). **Git is NOT live** — live is a MANUAL Netlify deploy; git origin is divergent/stale. Treat deploys + real contact/lead submissions as production actions (gated by clear, scoped confirmation from David). `.ai/`/`*.md` are kept private via forced-404 redirects in `netlify.toml`.
 
 ## Use
 

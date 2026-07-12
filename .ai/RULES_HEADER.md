@@ -44,12 +44,12 @@ Static HTML/CSS/JS. No framework, no build step.
 
 - Dev / preview: serve the folder statically (e.g. `npx serve .` or `netlify dev`); no build needed.
 - Build: none (`publish = "."`, static).
-- Deploy: **MANUAL Netlify deploy** — `netlify deploy --prod --dir=.` (git is NOT wired to live; git origin is divergent/stale). Deploy = production action → gated by `APPROVE LIVE CHANGE`.
+- Deploy: **MANUAL Netlify deploy** — `netlify deploy --prod --dir=.` (git is NOT wired to live; git origin is divergent/stale). Deploy = production action → gated by clear, scoped confirmation from David.
 
 ## Locked Rules
 
 - **Git is NOT live.** Live is a manual Netlify deploy; the git remote is divergent/stale. Never treat a git push as a deploy.
-- Live client site — treat any deploy or live mutation as a production action (gated by `APPROVE LIVE CHANGE`).
+- Live client site — treat any deploy or live mutation as a production action (gated by clear, scoped confirmation from David).
 - The contact / lead form is a real submission path — do not submit test leads against production.
 - Images `.webp` + `width`/`height` + lazy-load below the fold. Mobile-first, WCAG AA, LiFi footer.
 - `.env`/secrets are never read. DNS/domain/billing changes are gated.
